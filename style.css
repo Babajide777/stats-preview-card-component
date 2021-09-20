@@ -1,0 +1,42 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* (main background) */
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  /* (card background) */
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  /* (accent) */
+  --Soft-violet: hsl(277, 64%, 61%);
+  /* (main heading, stats) */
+  --White: hsl(0, 0%, 100%);
+  /* (main paragraph) */
+  --Slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
+  /* (stat headings) */
+  --Slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+  --f-inter: "Inter", sans-serif;
+  --f-laxend: "Lexend Deca", sans-serif;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
