@@ -40,3 +40,42 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  margin-top: 4rem;
+  background-color: var(--Very-dark-blue);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+}
+
+.card-component{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+  max-width: 90%;
+  height: 520px;
+  max-width: 90%;
+  max-height: 80%;
+  background-color: var(--Dark-desaturated-blue);
+
+}
+.mobile-image img{
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.second-half{
+  order: -1;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
