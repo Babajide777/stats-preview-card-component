@@ -40,7 +40,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   margin-top: 4rem;
   background-color: var(--Very-dark-blue);
 }
@@ -48,34 +48,145 @@ main {
   display: flex;
   justify-content: center;
   align-self: center;
-  
 }
 
-.card-component{
+.card-component {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   text-align: center;
-  width: 250px;
+  width: 200px;
   max-width: 90%;
-  height: 520px;
+  height: 500px;
   max-width: 90%;
   max-height: 80%;
   background-color: var(--Dark-desaturated-blue);
-
 }
-.mobile-image img{
+.mobile-image img {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+.desktop-image {
+  display: none;
+}
+.first-half-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.first-half-heading h3 {
+  color: var(--White);
+  font-family: var(--f-inter);
+  font-weight: 700;
+}
 
-.second-half{
+.first-half-heading h3 span {
+  color: var(--Soft-violet);
+}
+
+.first-half-body {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.first-half-body p {
+  color: var(--Slightly-transparent-white-stat);
+  font-family: var(--f-laxend);
+  font-weight: 400;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+
+.first-half-numbers {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.first-half-numbers div p:first-child {
+  margin-top: 0.7rem;
+  color: var(--White);
+  font-family: var(--f-inter);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.first-half-numbers div p:last-child {
+  color: var(--Slightly-transparent-white-stat);
+  text-transform: uppercase;
+  font-family: var(--f-laxend);
+  font-size: 0.55rem;
+  letter-spacing: 0.05rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.second-half {
   order: -1;
 }
 
-
-footer{
+footer {
   position: fixed;
   bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    margin-top: 10rem;
+  }
+  .card-component {
+    flex-direction: row-reverse;
+    width: 800px;
+    max-width: 85%;
+    height: 250px;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+    height: 100%;
+  }
+  .desktop-image img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .first-half {
+    width: 60%;
+    text-align: left;
+  }
+
+  .first-half-heading {
+    margin-top: 3rem;
+    padding-right: 4rem;
+  }
+  .first-half-heading h3 {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 60%;
+  }
+  .second-half {
+    margin-left: -2rem;
+  }
+  .first-half-body p {
+    text-align: left;
+    width: 60%;
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .first-half-numbers {
+    width: 80%;
+    display: flex;
+    margin-left: 2rem;
+    justify-content: space-between;
+  }
+  .first-half-numbers div p:first-child {
+    text-align: left;
+  }
 }
